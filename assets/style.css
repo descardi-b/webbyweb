@@ -1,24 +1,43 @@
+* {
+    text-decoration: none;
+    color: none; 
+}
+
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    color: black;
+    font-family: Lobster;
+    font-size: 120px;
+    color: rgb(255, 234, 254);
+    -webkit-text-stroke: 3px #F8F8F8;
+    text-shadow: 2px 5px 10px pink;     
     font-weight: lighter;
-    display: inline;
+    display: flex;
+    margin: 0px;
+}
+
+h1 a { 
+    color: rgb(255, 234, 254);
+    -webkit-text-stroke: 3px #F8F8F8;
 }
 
 li {
     list-style-type: none;
-    font-size: 56px;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 48px;
+    font-family: times;
     font-weight: lighter;
 }
 
-a {
+li a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+li a:hover {
+    text-decoration: none;
+    font-style: italic;
+    color: pink;
+}
+
+li a:focus {
     text-decoration: none;
     font-style: italic;
     color: pink;
@@ -38,4 +57,148 @@ footer {
     top: 0px;
     right: 0px;
     display: inline;
+}
+
+.info {
+    margin: 100px;
+    margin-top: 300px;
+}
+
+.info h2 {
+    font: lobster;
+    font-size: 72px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    color: rgb(255, 234, 254);
+    -webkit-text-stroke: 1px black;
+}
+
+.info h2:hover, .info li:hover, .play-quote h2:hover {
+    color: pink;
+}
+
+.info p, .play-info p {
+    font-size: 12px;
+    margin: 40px 0 0 40px;
+}
+
+.info a, .play-info a {
+    text-decoration: none;
+    color: pink;
+}
+
+.info a:hover, .play-info a:hover {
+    font-style: italic;
+    color: pink;
+}
+
+.info li a {
+    color: black;
+}
+
+.info section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.play img {
+    margin: 50px auto 50px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 30%;
+    height: auto;
+    border:rgb(255, 234, 254) 5px solid;
+    box-shadow: 10px 10px 5px rgb(224, 200, 224);
+    -moz-box-shadow: 10px 10px 5px rgb(224, 200, 224);
+    -webkit-box-shadow: 10px 10px 5px rgb(224, 200, 224);
+    -khtml-box-shadow: 10px 10px 5px rgb(224, 200, 224);
+}
+
+.play-info {
+    margin: 100px;
+    margin-top: 100px;
+}
+
+.play-info h3 {
+    font: lobster;
+    font-size: 24px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    color: #ffeafe;
+    -webkit-text-stroke: 1px rgb(209, 127, 159);
+}
+
+.play-quote h2 {
+    font: lobster;
+    font-size: 48px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    color: rgb(255, 234, 254);
+    -webkit-text-stroke: 1px black;
+}
+
+.emoji {
+    color: rgb(255, 234, 254);
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: 0px 5px 10px pink;    
+}
+
+/* media queries for screens less than 980px */
+@media screen and (max-width: 980px) and (min-width: 575px) {
+    h1 {
+        font-size: 150px;
+        color: rgb(255, 234, 254);
+        -webkit-text-stroke: 1px #F8F8F8;
+        text-shadow: 0px 5px 10px pink;        
+        width: 100%;
+        font-weight: bolder;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    li {
+        text-align: center;
+        justify-content: center;
+        margin: 40px 0 40px 0px;
+        font-family: times;
+    }
+
+    li a {
+        color:rgb(49, 49, 49)
+        text-align: center;
+        justify-content: center;
+    }
+
+    #strawberry {
+        display: none;
+    }
+
+    .topcorner {
+        flex-grow: 150%;
+    }
+
+    .emoji {
+        display: none;
+    }
+}
+
+/* media queries for screens less than 575px */
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 250px;
+        flex: 1 100%;
+    }
+
+    li {
+        margin: 100px 0 100px 0px;
+        font-size: 100px;
+    }
+
+    .emoji {
+        display: none;
+    }
 }
