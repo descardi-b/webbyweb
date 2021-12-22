@@ -135,6 +135,7 @@ footer {
     font-size: 48px;
     display: flex;
     max-width: 100%;
+    text-align: center;
     justify-content: center;
     color: rgb(255, 234, 254);
     -webkit-text-stroke: 1px black;
@@ -199,6 +200,14 @@ footer {
 
     .emoji {
         display: none;
+    }
+
+    .play-info p, .info p {
+        font-size: 30px;
+    }
+    
+    .play-info h3 {
+        font-size: 36px;
     }
 }
 
