@@ -183,13 +183,6 @@ footer {
         color:rgb(49, 49, 49)
     }
 
-    .nav li {
-        display: inline;
-        font-size: 45px;
-        flex-wrap: wrap;
-        padding: 50px;
-    }
-
     .info {
         margin-top: 150px;
     }
@@ -217,10 +210,8 @@ footer {
         margin-top: 20px;
     }
 
-    .nav li {
-        margin: 40px;
-        display: inline;
-        flex-wrap: wrap;
+    .nav {
+        display: none;
     }
 
     #strawberry {
