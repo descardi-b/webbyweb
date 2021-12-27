@@ -135,6 +135,7 @@ footer {
     font-size: 48px;
     display: flex;
     max-width: 100%;
+    text-align: center;
     justify-content: center;
     color: rgb(255, 234, 254);
     -webkit-text-stroke: 1px black;
@@ -164,10 +165,17 @@ footer {
         justify-content: center;
     }
 
+    .info section {
+        background-color: rgb(255, 163, 199, 0.6);
+        width: 20%;
+        border-radius: 100%;
+        margin: auto;
+    }
+
     li {
         text-align: left;
         justify-content: left;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 40px 0px;
         font-family: times;
     }
 
@@ -180,7 +188,6 @@ footer {
         font-size: 45px;
         flex-wrap: wrap;
         padding: 50px;
-        border-bottom: 1px solid rgb(255, 189, 214);
     }
 
     .info {
@@ -188,7 +195,6 @@ footer {
     }
 
     .info h2 {
-        background-color:rgba(255, 136, 205, 0.6);
         max-width: 20%;
         max-height: 100%;
         border-radius: 50%;
@@ -199,10 +205,21 @@ footer {
     .info p, .play-info p {
         font-size: 20px;
         flex-wrap: wrap;
+        margin-bottom: 10px;
     }
 
     .play-info h3 {
         font-size: 30px;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .nav li {
+        margin: 40px;
+        display: inline;
         flex-wrap: wrap;
     }
 
@@ -212,6 +229,14 @@ footer {
 
     .emoji {
         display: none;
+    }
+
+    .play-info p, .info p {
+        font-size: 30px;
+    }
+    
+    .play-info h3 {
+        font-size: 36px;
     }
 }
 
