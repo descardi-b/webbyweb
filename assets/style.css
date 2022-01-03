@@ -148,7 +148,7 @@ footer {
 }
 
 /* media queries for screens less than 980px */
-@media screen and (max-width: 980px) and (min-width: 575px) {
+@media screen and (max-width: 980px) {
    
     footer {
         font-size: 20px;
@@ -228,19 +228,5 @@ footer {
     
     .play-info h3 {
         font-size: 36px;
-    }
-}
-
-/* media queries for screens less than 575px */
-
-@media screen and (max-width: 575px) {
-    h1 {
-        font-size: 250px;
-        flex: 1 100%;
-    }
-
-    li {
-        margin: 100px 0 100px 0px;
-        font-size: 100px;
     }
 }
