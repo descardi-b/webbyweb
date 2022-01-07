@@ -52,6 +52,14 @@ footer {
     right: 5px;
 }
 
+footer a {
+    color:pink;
+}
+
+footer a:hover {
+    font-style: italic;
+}
+
 .topcorner {
     position: fixed;
     top: 0px;
@@ -152,6 +160,14 @@ footer {
    
     footer {
         font-size: 20px;
+    }
+
+    footer a {
+        color: pink;
+    }
+
+    footer a:hover {
+        font-style: italic;
     }
     
     h1 {
